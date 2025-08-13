@@ -37,7 +37,7 @@
             {
                 "SimulatedParameter": true,
                 "DisplayName": "Cabin_ppCO2",
-                "DisplayValue": "3.07 mmHg",
+                "DisplayValue": "6.0 mmHg",
                 "Id": 44,
                 "Name": "ppCO2",
                 "ParameterGroup": "L1",
@@ -48,20 +48,20 @@
                 "LowerWarningLimit": -2.0,
                 "Divisor": 100,
                 "Unit": "mmHg",
-                "SimValue": 3.07,
+                "SimValue": 6.0,
                 "noise": 0.01,
-                "currentValue": 3.07,
-                "CurrentValue": 3.07,
-                "simulationValue": 3.07,
+                "currentValue": 6.0,
+                "CurrentValue": 6.0,
+                "simulationValue": 6.0,
                 "Status": {
                     "LowerWarning": false,
                     "LowerCaution": false,
-                    "Nominal": true,
-                    "UpperCaution": false,
+                    "Nominal": false,
+                    "UpperCaution": true,
                     "UpperWarning": false,
                     "UnderLimit": false,
                     "OverLimit": false,
-                    "Caution": false,
+                    "Caution": true,
                     "Warning": false
                 },
                 "HasDuplicationError": false,
@@ -103,7 +103,7 @@
             {
                 "SimulatedParameter": true,
                 "DisplayName": "Cabin_ppCO2",
-                "DisplayValue": "3.07 mmHg",
+                "DisplayValue": "6.0 mmHg",
                 "Id": 47,
                 "Name": "ppCO2",
                 "ParameterGroup": "L2",
@@ -114,20 +114,20 @@
                 "LowerWarningLimit": -2.0,
                 "Divisor": 100,
                 "Unit": "mmHg",
-                "SimValue": 3.07,
+                "SimValue": 6.0,
                 "noise": 0.01,
-                "currentValue": 3.07,
-                "CurrentValue": 3.07,
-                "simulationValue": 3.07,
+                "currentValue": 6.0,
+                "CurrentValue": 6.0,
+                "simulationValue": 6.0,
                 "Status": {
                     "LowerWarning": false,
                     "LowerCaution": false,
-                    "Nominal": true,
-                    "UpperCaution": false,
+                    "Nominal": false,
+                    "UpperCaution": true,
                     "UpperWarning": false,
                     "UnderLimit": false,
                     "OverLimit": false,
-                    "Caution": false,
+                    "Caution": true,
                     "Warning": false
                 },
                 "HasDuplicationError": false,
@@ -201,11 +201,11 @@
             }
         ],
         "MasterStatus": {
-            "Caution": false,
+            "Caution": true,
             "Warning": false
         },
         "HardwareList": [],
         "SimulationList": [],
-        "Timestamp": "MD 224 17:50:02"
+        "Timestamp": "MD 225 13:37:39"
     }
 }
