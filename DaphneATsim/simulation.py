@@ -331,7 +331,7 @@ def main():
         if ENABLE_PLOTTING:
             cdra_state.history['time'].append(cdra_state.time)
             cdra_state.history['moisture_content'].append(cdra_state.moisture_content)
-            cdra_state.history['co2_content'].append(cdra_state.co2_content)
+            cdra_state.history['co2_content'].append(kg_per_kg_air_to_mmhg(cdra_state.co2_content))
             cdra_state.history['co2_removed'].append(cdra_state.co2_removed_total)
             cdra_state.history['air_flow_rate'].append(cdra_state.air_flow_rate)
             cdra_state.history['desiccant_heaters'].append((cdra_state.heater_on['desiccant_1'], cdra_state.heater_on['desiccant_3']))

@@ -14,10 +14,11 @@ Available failure types:
 - fan_degraded: Reduced air flow rates
 """
 
-REAL_TIME_MODE = False  # Set to False to run as fast as possible (no delays, for testing)
+REAL_TIME_MODE = True  # Set to False to run as fast as possible (no delays, for testing)
 SIMULATION_SPEED = 10  # How many simulation steps to generate per real second
 TELEMETRY_FREQUENCY_HZ = 1.0  # How many telemetry posts per real second (e.g., 1.0 = every 1 second)
-TIME_STEPS = 800  # Total number of simulation steps
+TIME_STEPS = 100000  # Total number of simulation steps
+ENABLE_PLOTTING = False # Whether to show matplotlib plots after simulation
 
 # Timing behavior:
 # - If SIMULATION_SPEED = 10 and TELEMETRY_FREQUENCY_HZ = 1.0:
@@ -32,7 +33,7 @@ CDRA_FAILURES = {
     'filter_saturation_start': 0,  # When filter saturation failure starts
     'filter_saturation_end': TIME_STEPS,    # When filter saturation failure ends
     
-    'valve_stuck': False,
+    'valve_stuck': True,
     'valve_stuck_start': 0,       # When valve stuck failure starts
     'valve_stuck_end': TIME_STEPS,         # When valve stuck failure ends
     
@@ -41,7 +42,7 @@ CDRA_FAILURES = {
     'fan_degraded': False,
     'fan_degraded_start': 0,      # When fan degradation starts
     'fan_degraded_end': TIME_STEPS,        # When fan degradation ends
-    'degraded_flow_rate': 0.8        # Degraded flow rate (kg/s)
+    'degraded_flow_rate': 0.38        # Degraded flow rate (kg/s)
 }
 
 # Telemetry settings
@@ -62,7 +63,4 @@ MOLAR_MASS_AIR = 28.97  # g/mol
 
 # Legacy conversion factor (keeping for backward compatibility)
 # CO2_TO_MMHG_FACTOR = STANDARD_PRESSURE_MMHG * MOLAR_MASS_CO2 / MOLAR_MASS_AIR
-
-# Debug settings
-ENABLE_PLOTTING = True # Whether to show matplotlib plots after simulation
 

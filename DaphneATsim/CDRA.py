@@ -175,10 +175,10 @@ def plot_results(state: CDRAState):
     plt.figure(figsize=(14, 10))
 
     plt.subplot(4, 1, 1)
-    plt.plot(state.history['time'], state.history['moisture_content'], label='Moisture Content')
+    #plt.plot(state.history['time'], state.history['moisture_content'], label='Moisture Content')
     plt.plot(state.history['time'], state.history['co2_content'], label='CO2 Content')
-    plt.ylabel('kg/kg dry air')
-    plt.title('Gas Concentration Over Time')
+    plt.ylabel('mmHg')
+    plt.title('Gas Pressure Over Time')
     plt.legend()
     plt.grid()
 
