@@ -15,7 +15,7 @@ Available failure types:
 """
 
 REAL_TIME_MODE = True  # Set to False to run as fast as possible (no delays, for testing)
-SIMULATION_SPEED = 10  # How many simulation steps to generate per real second
+SIMULATION_SPEED = 50  # How many simulation steps to generate per real second
 TELEMETRY_FREQUENCY_HZ = 1.0  # How many telemetry posts per real second (e.g., 1.0 = every 1 second)
 TIME_STEPS = 100000  # Total number of simulation steps
 ENABLE_PLOTTING = False # Whether to show matplotlib plots after simulation
